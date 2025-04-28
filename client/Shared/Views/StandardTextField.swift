@@ -11,6 +11,7 @@ struct StandardTextField: View {
     
     @Binding var text: String
     var height: CGFloat = 30
+    var padding: CGFloat = .layer3
     //TODO: pass into texttoolview
     var font: Font = .headline.bold()
     var placeholder: String = ""
@@ -34,7 +35,7 @@ struct StandardTextField: View {
                 .italic(italic)
                 //.correctionDisabled()
                 .frame(height: height)
-                .padding(.horizontal, .layer3)
+                .padding(.horizontal, padding)
                 .font(font.bold())
                 .background(
                     RoundedRectangle(cornerRadius: .layer4)

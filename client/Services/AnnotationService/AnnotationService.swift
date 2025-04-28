@@ -8,6 +8,10 @@
 
 import Granite
 
+/*
+ "Reference Manager"
+ */
+
 struct AnnotationService: GraniteService {
     @Service(.online) var center: Center
 }

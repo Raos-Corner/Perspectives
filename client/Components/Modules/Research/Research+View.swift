@@ -31,7 +31,7 @@ extension Research: View {
             if state.isVisible {
                 VStack(spacing: .layer2) {
                     if input.isNotEmpty {
-                        AnnotationCreationView(highlighted: $input)
+                        AnnotationCreationView(baseLink: baseLink, highlighted: $input)
                             .attach({ model in
                                 service._state.annotations.wrappedValue[model.id] = model
                                 input = ""
@@ -71,7 +71,7 @@ extension Research: View {
                             service._state.annotations.wrappedValue[modified.id] = modified
                         }, at: \.modified)
                         .attach({ model in
-                            service._state.annotations.wrappedValue[model.id] = nil
+                            service._state.annotations.wrappedValue.removeValue(forKey: model.id)
                         }, at: \.didRemove)
                 }
             }

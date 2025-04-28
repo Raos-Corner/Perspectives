@@ -11,6 +11,8 @@ import Granite
 struct AnnotationCreationView: View {
     @GraniteAction<AnnotationModel> var annotated
     
+    var baseLink: String
+    
     @Binding
     var highlighted: String
     @State
@@ -22,10 +24,12 @@ struct AnnotationCreationView: View {
                 VStack(spacing: .layer1) {
                     StandardTextField(text: $highlighted,
                                       height: 20,
+                                      padding: .layer1,
                                       backgroundColor: .clear)
                     .allowsHitTesting(false)
                     StandardTextField(text: $input,
-                                      height: 10,
+                                      height: 15,
+                                      padding: .layer1,
                                       font: .subheadline,
                                       placeholder: "annotation",
                                       italic: true,
@@ -37,7 +41,7 @@ struct AnnotationCreationView: View {
             Spacer()
             
             Button {
-                annotated.perform(.init(topic: highlighted, annotation: input))
+                annotated.perform(.init(topic: highlighted, annotation: input, link: baseLink))
                 input = ""
             } label: {
                 Image(systemName: "plus.app")

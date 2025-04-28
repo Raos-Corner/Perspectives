@@ -13,5 +13,6 @@ struct Research: GraniteComponent {
     @Command var center: Center
     @Relay var service: AnnotationService
     
+    var baseLink: String
     @Binding var input: String
 }

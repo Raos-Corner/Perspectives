@@ -51,7 +51,8 @@ extension Garden: View {
                 }
                 Spacer()
                 
-                Research(input: _state.highlightedText)
+                Research(baseLink: state.urlText,
+                         input: _state.highlightedText)
             }
         }
         .onChange(of: state.highlightedText) { old, new in

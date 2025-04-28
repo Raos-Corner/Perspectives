@@ -24,10 +24,12 @@ struct AnnotationView: View {
                 VStack(spacing: .layer1) {
                     StandardTextField(text: $model.topic,
                                       height: 20,
+                                      padding: .layer1,
                                       backgroundColor: .clear)
                     .allowsHitTesting(false)
                     StandardTextField(text: $model.annotation,
-                                      height: 10,
+                                      height: 15,
+                                      padding: .layer1,
                                       font: .subheadline,
                                       placeholder: "annotation",
                                       italic: true,
@@ -51,7 +53,7 @@ struct AnnotationView: View {
             }
             
             Button {
-                modified.perform(model)
+                didRemove.perform(model)
             } label: {
                 Image(systemName: "minus.square")
                     .font(.title2.bold())
@@ -69,7 +71,7 @@ struct AnnotationView: View {
         }
     }
 }
-
-#Preview {
-    AnnotationView(model: .init(topic: "highlight", annotation: "Test annotation"))
-}
+//
+//#Preview {
+//    AnnotationView(model: .init(topic: "highlight", annotation: "Test annotation"))
+//}

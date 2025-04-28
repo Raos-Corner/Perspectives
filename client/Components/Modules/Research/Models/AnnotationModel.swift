@@ -10,6 +10,7 @@ import Granite
 
 struct AnnotationModel: GraniteModel, Identifiable {
     var id: UUID = UUID()
-    var topic: String
+    var topic: String //highlight
     var annotation: String
+    var link: String
 }
