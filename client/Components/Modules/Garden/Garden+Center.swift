@@ -13,7 +13,7 @@ extension Garden {
     struct Center: GraniteCenter {
         struct State: GraniteState {
             var highlightedText: String = ""
-            var urlText: String = "https://news.ycombinator.com/item?id=43814433"
+            var urlText: String = "https://google.com"
         }
         
         @Store public var state: State

@@ -150,6 +150,36 @@
 		717D388C2887A44D00165D7D /* Home+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D388A2887A44D00165D7D /* Home+View.swift */; };
 		717E613328A0D69B009A2B1A /* Home._.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E613228A0D69B009A2B1A /* Home._.swift */; };
 		717E613428A0D69B009A2B1A /* Home._.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E613228A0D69B009A2B1A /* Home._.swift */; };
+		7192FF872DBF840F004530E8 /* EnvironmentService+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF852DBF840F004530E8 /* EnvironmentService+Center.swift */; };
+		7192FF882DBF840F004530E8 /* PaneKit.Window.Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF792DBF840F004530E8 /* PaneKit.Window.Component.swift */; };
+		7192FF892DBF840F004530E8 /* PaneKit.Window.Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF7B2DBF840F004530E8 /* PaneKit.Window.Visibility.swift */; };
+		7192FF8A2DBF840F004530E8 /* PaneKit.PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF772DBF840F004530E8 /* PaneKit.PopupView.swift */; };
+		7192FF8B2DBF840F004530E8 /* InteractionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF7D2DBF840F004530E8 /* InteractionManager.swift */; };
+		7192FF8C2DBF840F004530E8 /* EnvironmentService._.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF802DBF840F004530E8 /* EnvironmentService._.swift */; };
+		7192FF8D2DBF840F004530E8 /* PaneKit.PaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF762DBF840F004530E8 /* PaneKit.PaneView.swift */; };
+		7192FF8E2DBF840F004530E8 /* MenuBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF7E2DBF840F004530E8 /* MenuBarManager.swift */; };
+		7192FF8F2DBF840F004530E8 /* PaneKit.Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF752DBF840F004530E8 /* PaneKit.Display.swift */; };
+		7192FF902DBF840F004530E8 /* EnvironmentService.Hotkey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF812DBF840F004530E8 /* EnvironmentService.Hotkey.swift */; };
+		7192FF912DBF840F004530E8 /* PaneKit.Window.Component.Kind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF7A2DBF840F004530E8 /* PaneKit.Window.Component.Kind.swift */; };
+		7192FF922DBF840F004530E8 /* PaneKit.Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF782DBF840F004530E8 /* PaneKit.Window.swift */; };
+		7192FF932DBF840F004530E8 /* EnvironmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF842DBF840F004530E8 /* EnvironmentService.swift */; };
+		7192FF942DBF840F004530E8 /* EnvironmentService.Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF822DBF840F004530E8 /* EnvironmentService.Interaction.swift */; };
+		7192FF952DBF840F004530E8 /* PaneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF742DBF840F004530E8 /* PaneKit.swift */; };
+		7192FF962DBF840F004530E8 /* EnvironmentService+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF852DBF840F004530E8 /* EnvironmentService+Center.swift */; };
+		7192FF972DBF840F004530E8 /* PaneKit.Window.Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF792DBF840F004530E8 /* PaneKit.Window.Component.swift */; };
+		7192FF982DBF840F004530E8 /* PaneKit.Window.Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF7B2DBF840F004530E8 /* PaneKit.Window.Visibility.swift */; };
+		7192FF992DBF840F004530E8 /* PaneKit.PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF772DBF840F004530E8 /* PaneKit.PopupView.swift */; };
+		7192FF9A2DBF840F004530E8 /* InteractionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF7D2DBF840F004530E8 /* InteractionManager.swift */; };
+		7192FF9B2DBF840F004530E8 /* EnvironmentService._.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF802DBF840F004530E8 /* EnvironmentService._.swift */; };
+		7192FF9C2DBF840F004530E8 /* PaneKit.PaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF762DBF840F004530E8 /* PaneKit.PaneView.swift */; };
+		7192FF9D2DBF840F004530E8 /* MenuBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF7E2DBF840F004530E8 /* MenuBarManager.swift */; };
+		7192FF9E2DBF840F004530E8 /* PaneKit.Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF752DBF840F004530E8 /* PaneKit.Display.swift */; };
+		7192FF9F2DBF840F004530E8 /* EnvironmentService.Hotkey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF812DBF840F004530E8 /* EnvironmentService.Hotkey.swift */; };
+		7192FFA02DBF840F004530E8 /* PaneKit.Window.Component.Kind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF7A2DBF840F004530E8 /* PaneKit.Window.Component.Kind.swift */; };
+		7192FFA12DBF840F004530E8 /* PaneKit.Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF782DBF840F004530E8 /* PaneKit.Window.swift */; };
+		7192FFA22DBF840F004530E8 /* EnvironmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF842DBF840F004530E8 /* EnvironmentService.swift */; };
+		7192FFA32DBF840F004530E8 /* EnvironmentService.Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF822DBF840F004530E8 /* EnvironmentService.Interaction.swift */; };
+		7192FFA42DBF840F004530E8 /* PaneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192FF742DBF840F004530E8 /* PaneKit.swift */; };
 		7197FAD62964A36A005EBBA4 /* GraniteDisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197FAD52964A36A005EBBA4 /* GraniteDisclaimerView.swift */; };
 		7197FAD72964A36A005EBBA4 /* GraniteDisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197FAD52964A36A005EBBA4 /* GraniteDisclaimerView.swift */; };
 		7197FAD92964A4E8005EBBA4 /* GraniteEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197FAD82964A4E8005EBBA4 /* GraniteEmptyView.swift */; };
@@ -525,6 +555,21 @@
 		717C12A2293BF03C0060A446 /* Animations._.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations._.swift; sourceTree = "<group>"; };
 		717D388A2887A44D00165D7D /* Home+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+View.swift"; sourceTree = "<group>"; };
 		717E613228A0D69B009A2B1A /* Home._.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home._.swift; sourceTree = "<group>"; };
+		7192FF742DBF840F004530E8 /* PaneKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneKit.swift; sourceTree = "<group>"; };
+		7192FF752DBF840F004530E8 /* PaneKit.Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneKit.Display.swift; sourceTree = "<group>"; };
+		7192FF762DBF840F004530E8 /* PaneKit.PaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneKit.PaneView.swift; sourceTree = "<group>"; };
+		7192FF772DBF840F004530E8 /* PaneKit.PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneKit.PopupView.swift; sourceTree = "<group>"; };
+		7192FF782DBF840F004530E8 /* PaneKit.Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneKit.Window.swift; sourceTree = "<group>"; };
+		7192FF792DBF840F004530E8 /* PaneKit.Window.Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneKit.Window.Component.swift; sourceTree = "<group>"; };
+		7192FF7A2DBF840F004530E8 /* PaneKit.Window.Component.Kind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneKit.Window.Component.Kind.swift; sourceTree = "<group>"; };
+		7192FF7B2DBF840F004530E8 /* PaneKit.Window.Visibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneKit.Window.Visibility.swift; sourceTree = "<group>"; };
+		7192FF7D2DBF840F004530E8 /* InteractionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionManager.swift; sourceTree = "<group>"; };
+		7192FF7E2DBF840F004530E8 /* MenuBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarManager.swift; sourceTree = "<group>"; };
+		7192FF802DBF840F004530E8 /* EnvironmentService._.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentService._.swift; sourceTree = "<group>"; };
+		7192FF812DBF840F004530E8 /* EnvironmentService.Hotkey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentService.Hotkey.swift; sourceTree = "<group>"; };
+		7192FF822DBF840F004530E8 /* EnvironmentService.Interaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentService.Interaction.swift; sourceTree = "<group>"; };
+		7192FF842DBF840F004530E8 /* EnvironmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentService.swift; sourceTree = "<group>"; };
+		7192FF852DBF840F004530E8 /* EnvironmentService+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentService+Center.swift"; sourceTree = "<group>"; };
 		7197FAD52964A36A005EBBA4 /* GraniteDisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraniteDisclaimerView.swift; sourceTree = "<group>"; };
 		7197FAD82964A4E8005EBBA4 /* GraniteEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraniteEmptyView.swift; sourceTree = "<group>"; };
 		719E23F029532FE800CEB2FE /* BasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
@@ -1026,6 +1071,7 @@
 		711B3FB62885D48000F3080D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7192FF862DBF840F004530E8 /* EnvironmentService */,
 				71D944B32AA655810033D32D /* ModalService */,
 				71E8ABCD2DBF01790062A706 /* AnnotationService */,
 			);
@@ -1122,6 +1168,52 @@
 				717C12A2293BF03C0060A446 /* Animations._.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		7192FF7C2DBF840F004530E8 /* PaneKit */ = {
+			isa = PBXGroup;
+			children = (
+				7192FF742DBF840F004530E8 /* PaneKit.swift */,
+				7192FF752DBF840F004530E8 /* PaneKit.Display.swift */,
+				7192FF762DBF840F004530E8 /* PaneKit.PaneView.swift */,
+				7192FF772DBF840F004530E8 /* PaneKit.PopupView.swift */,
+				7192FF782DBF840F004530E8 /* PaneKit.Window.swift */,
+				7192FF792DBF840F004530E8 /* PaneKit.Window.Component.swift */,
+				7192FF7A2DBF840F004530E8 /* PaneKit.Window.Component.Kind.swift */,
+				7192FF7B2DBF840F004530E8 /* PaneKit.Window.Visibility.swift */,
+			);
+			path = PaneKit;
+			sourceTree = "<group>";
+		};
+		7192FF7F2DBF840F004530E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7192FF7C2DBF840F004530E8 /* PaneKit */,
+				7192FF7D2DBF840F004530E8 /* InteractionManager.swift */,
+				7192FF7E2DBF840F004530E8 /* MenuBarManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7192FF832DBF840F004530E8 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				7192FF802DBF840F004530E8 /* EnvironmentService._.swift */,
+				7192FF812DBF840F004530E8 /* EnvironmentService.Hotkey.swift */,
+				7192FF822DBF840F004530E8 /* EnvironmentService.Interaction.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		7192FF862DBF840F004530E8 /* EnvironmentService */ = {
+			isa = PBXGroup;
+			children = (
+				7192FF7F2DBF840F004530E8 /* Models */,
+				7192FF832DBF840F004530E8 /* Reducers */,
+				7192FF842DBF840F004530E8 /* EnvironmentService.swift */,
+				7192FF852DBF840F004530E8 /* EnvironmentService+Center.swift */,
+			);
+			path = EnvironmentService;
 			sourceTree = "<group>";
 		};
 		719725F628CC7F0300A64334 /* Views */ = {
@@ -1907,6 +1999,21 @@
 				719E2414295348B900CEB2FE /* Debug+Center.swift in Sources */,
 				71FBA7F9296D16110090B630 /* GranitePagingView.swift in Sources */,
 				71FC7F702A01C9A200CD7203 /* TableView.swift in Sources */,
+				7192FF872DBF840F004530E8 /* EnvironmentService+Center.swift in Sources */,
+				7192FF882DBF840F004530E8 /* PaneKit.Window.Component.swift in Sources */,
+				7192FF892DBF840F004530E8 /* PaneKit.Window.Visibility.swift in Sources */,
+				7192FF8A2DBF840F004530E8 /* PaneKit.PopupView.swift in Sources */,
+				7192FF8B2DBF840F004530E8 /* InteractionManager.swift in Sources */,
+				7192FF8C2DBF840F004530E8 /* EnvironmentService._.swift in Sources */,
+				7192FF8D2DBF840F004530E8 /* PaneKit.PaneView.swift in Sources */,
+				7192FF8E2DBF840F004530E8 /* MenuBarManager.swift in Sources */,
+				7192FF8F2DBF840F004530E8 /* PaneKit.Display.swift in Sources */,
+				7192FF902DBF840F004530E8 /* EnvironmentService.Hotkey.swift in Sources */,
+				7192FF912DBF840F004530E8 /* PaneKit.Window.Component.Kind.swift in Sources */,
+				7192FF922DBF840F004530E8 /* PaneKit.Window.swift in Sources */,
+				7192FF932DBF840F004530E8 /* EnvironmentService.swift in Sources */,
+				7192FF942DBF840F004530E8 /* EnvironmentService.Interaction.swift in Sources */,
+				7192FF952DBF840F004530E8 /* PaneKit.swift in Sources */,
 				71E8ABB92DBEFB230062A706 /* StandardTextView.swift in Sources */,
 				71E8ABBA2DBEFB230062A706 /* StandardTextField.swift in Sources */,
 				71E8ABA82DBEF1610062A706 /* ActionsReducer.swift in Sources */,
@@ -2114,6 +2221,21 @@
 				71D944D52AA655810033D32D /* GraniteAlertViewPresentationMode.swift in Sources */,
 				71D944D12AA655810033D32D /* GraniteModal.swift in Sources */,
 				711B3FDE2885D4F000F3080D /* Home.swift in Sources */,
+				7192FF962DBF840F004530E8 /* EnvironmentService+Center.swift in Sources */,
+				7192FF972DBF840F004530E8 /* PaneKit.Window.Component.swift in Sources */,
+				7192FF982DBF840F004530E8 /* PaneKit.Window.Visibility.swift in Sources */,
+				7192FF992DBF840F004530E8 /* PaneKit.PopupView.swift in Sources */,
+				7192FF9A2DBF840F004530E8 /* InteractionManager.swift in Sources */,
+				7192FF9B2DBF840F004530E8 /* EnvironmentService._.swift in Sources */,
+				7192FF9C2DBF840F004530E8 /* PaneKit.PaneView.swift in Sources */,
+				7192FF9D2DBF840F004530E8 /* MenuBarManager.swift in Sources */,
+				7192FF9E2DBF840F004530E8 /* PaneKit.Display.swift in Sources */,
+				7192FF9F2DBF840F004530E8 /* EnvironmentService.Hotkey.swift in Sources */,
+				7192FFA02DBF840F004530E8 /* PaneKit.Window.Component.Kind.swift in Sources */,
+				7192FFA12DBF840F004530E8 /* PaneKit.Window.swift in Sources */,
+				7192FFA22DBF840F004530E8 /* EnvironmentService.swift in Sources */,
+				7192FFA32DBF840F004530E8 /* EnvironmentService.Interaction.swift in Sources */,
+				7192FFA42DBF840F004530E8 /* PaneKit.swift in Sources */,
 				71E8ABBB2DBEFB230062A706 /* StandardTextView.swift in Sources */,
 				71E8ABBC2DBEFB230062A706 /* StandardTextField.swift in Sources */,
 				71E8ABA92DBEF1610062A706 /* ActionsReducer.swift in Sources */,

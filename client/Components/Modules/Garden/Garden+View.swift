@@ -16,12 +16,33 @@ extension Garden: View {
                            state: $webViewState,
                            highlightedText: _state.highlightedText)
             
-            
+            // Titlebar draggability
+            VStack {
+                Color.black.opacity(0.0001)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: WindowComponent.Style.defaultTitleBarHeight)
+                
+                Spacer()
+            }
             
             HStack {
                 VStack {
                     Spacer()
                     HStack {
+                        Button {
+                            webViewAction = .load(.init(url: .init(string: "https://google.com")!))
+                        } label: {
+                            Image(systemName: "house")
+                                .font(.title2.bold())
+                                .aspectRatio(.init(1, 1), contentMode: .fit)
+                                .padding(.layer1 + 3)
+                                .background {
+                                    Color.secondaryBackground
+                                        .cornerRadius(.layer4)
+                                }
+                        }
+                        .buttonStyle(.plain)
+                        
                         StandardTextField(text: _state.urlText)
                         
                         Button {
@@ -46,7 +67,7 @@ extension Garden: View {
                         .buttonStyle(.plain)
                     }
                     .background(Color.background.opacity(0.8).cornerRadius(.layer4))
-                    .frame(maxHeight: 60)
+                    .frame(maxWidth: 400, maxHeight: 60)
                     .padding(.leading, .layer4)
                 }
                 Spacer()

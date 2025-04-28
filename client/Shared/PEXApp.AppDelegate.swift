@@ -31,9 +31,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         //will not fire
         NSApplication.shared.delegate = self
         
-//        if let window = NSApplication.shared.windows.first {
-//            window.close()
-//        }
+        if let window = NSApplication.shared.windows.first {
+            window.close()
+        }
         
         let nc = NotificationCenter.default
         nc.post(name: Notification.Name("nyc.stoic.Bullish.DidFinishLaunching"), object: nil)

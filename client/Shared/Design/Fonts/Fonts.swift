@@ -29,6 +29,14 @@ public struct Fonts {
         case caption
         case caption2
         
+        static var defaultSize: FontSize {
+            .headline
+        }
+        
+        static var defaultResponseSize: FontSize {
+            .headline
+        }
+        
         var value: CGFloat {
             switch self {
             case .largeTitle:
@@ -89,11 +97,69 @@ public struct Fonts {
         case boldItalic = "BoldItalic"
         case regular = "Regular"
         case italic = "Italic"
+        
+        var textWeight: Font.Weight {
+            switch self {
+            case .bold:
+                return .bold
+            default:
+                return .regular
+            }
+        }
+        
+        var textWeightNS: NSFont.Weight {
+            switch self {
+            case .bold:
+                return .bold
+            default:
+                return .regular
+            }
+        }
     }
     
     public enum FontType: String {
         case menlo = "Menlo"
     }
+    
+    struct Details {
+        let boundingRect: NSRect
+        let boundingRectDiff: CGFloat
+        let lineHeight: CGFloat
+        let actualHeight: CGFloat
+        
+        static func from(_ size: FontSize, weight: FontWeight = .regular) -> Details {
+            let value = size.value
+            let font = Fonts.nsFont(size, weight)
+            let boundingRect = font.boundingRectForFont
+            let lineHeight = value
+            let diff = boundingRect.height - lineHeight
+            
+            return .init(boundingRect: boundingRect,
+                         boundingRectDiff: diff,
+                         lineHeight: lineHeight,
+                         actualHeight: font.actualHeight)
+        }
+    }
+    
+    public static func nsFont(_ size: FontSize, _ weight: FontWeight) -> NSFont {
+        NSFont.systemFont(ofSize: size.value, weight: weight.textWeightNS)
+        
+    }
 }
 
+extension NSFont {
+    var actualHeight: CGFloat {
+        let mainFont: CGFloat = self.pointSize
+        let boundingRectDiff: CGFloat = (self.boundingRectForFont.height - mainFont)
+        return self.boundingRectForFont.height//mainFont + boundingRectDiff
+    }
+}
 
+extension String {
+    func height(withConstrainedWidth width: CGFloat, font: NSFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+    
+        return ceil(boundingBox.height)
+    }
+}

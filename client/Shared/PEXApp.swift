@@ -16,6 +16,8 @@ struct PEXApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     #endif
     
+    @Relay var environment: EnvironmentService
+    
     let pubDidFinishLaunching = NotificationCenter.default
             .publisher(for: NSNotification.Name("nyc.stoic.Bullish.DidFinishLaunching"))
     
@@ -23,22 +25,31 @@ struct PEXApp: App {
         #if os(macOS)
         GraniteNavigationWindow.backgroundColor = NSColor(Color.black)
         #endif
+        
+        environment.center.boot.send()
+        
+        //TODO: DEV
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            InteractionManager.shared.observeHotkey(kind: .mount)
+        }
     }
     
     var body: some Scene {
-        #if os(iOS)
+//        #if os(iOS)
+//        WindowGroup {
+//            Home()
+//                .preferredColorScheme(.dark)
+//        }
+//        #elseif os(macOS)
+//        WindowComponent(backgroundColor: Color.clear) {
+//            Home()
+//                .background(Brand.Colors.black)
+//        }
+//        #endif
         WindowGroup {
             Home()
                 .preferredColorScheme(.dark)
         }
-        #elseif os(macOS)
-        WindowComponent(backgroundColor: Color.black) {
-            Home()
-                .background(Brand.Colors.black)
-//            Home()
-//                .background(Brand.Colors.black)
-        }
-        #endif
     }
 }
 struct EmptyComponent: GraniteComponent {

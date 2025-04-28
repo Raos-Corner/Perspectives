@@ -76,8 +76,11 @@ extension Compile {
     struct Reset: GraniteReducer {
         typealias Center = Compile.Center
         
+        @Relay var service: AnnotationService
+        
         func reduce(state: inout Center.State) {
             state.result = ""
+            service.center.reset.send()
         }
     }
     

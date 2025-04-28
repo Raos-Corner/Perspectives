@@ -16,6 +16,7 @@ extension Compile {
         }
         
         @Event var generate: Generate.Reducer
+        @Event var reset: Reset.Reducer
         
         @Store public var state: State
     }

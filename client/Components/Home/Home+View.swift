@@ -60,54 +60,56 @@ extension Home: View {
     }
     
     public var view: some View {
-        GraniteTabView(.init(height: tabViewHeight,
-                             paddingIcons: .init(topPadding, 0, bottomPadding, 0),
-                             landscape: Device.isExpandedLayout,
-                             enableHaptic: true) {
-            
-            Brand.Colors.black.fitToContainer()
-            
-        }, currentTab: 0) {
-            GraniteTab {
-                Garden()
-            } icon: {
-                GraniteButton(.image("home_icon"),
-                              selected: false,
-                              size: .init(14),
-                              padding: .init(0,
-                                             Brand.Padding.small,
-                                             Brand.Padding.xSmall,
-                                             Brand.Padding.small))
-            }
-            
+//        GraniteTabView(.init(height: tabViewHeight,
+//                             paddingIcons: .init(topPadding, 0, bottomPadding, 0),
+//                             landscape: Device.isExpandedLayout,
+//                             enableHaptic: true) {
+//            
+//            Brand.Colors.black.fitToContainer()
+//            
+//        }, currentTab: 0) {
 //            GraniteTab {
-//                Settings()
+//                Garden()
 //            } icon: {
-//                GraniteButton(.imageSystem("gearshape"),
+//                GraniteButton(.image("home_icon"),
 //                              selected: false,
-//                              size: .init(16),
+//                              size: .init(14),
 //                              padding: .init(0,
 //                                             Brand.Padding.small,
 //                                             Brand.Padding.xSmall,
 //                                             Brand.Padding.small))
 //            }
-            
-        }
-        .edgesIgnoringSafeArea(edgesToEdgesToIgnore)
-        .graniteNavigation(backgroundColor: Brand.Colors.black, disable: Device.isMacOS) {
-            GraniteButton(.imageSystem("chevron.backward"),
-                            selected: true,
-                            size: .init(14),
-                            padding: .init(0,
-                                           Brand.Padding.small,
-                                           Brand.Padding.xSmall,
-                                           Brand.Padding.small))
-        }
+//            
+////            GraniteTab {
+////                Settings()
+////            } icon: {
+////                GraniteButton(.imageSystem("gearshape"),
+////                              selected: false,
+////                              size: .init(16),
+////                              padding: .init(0,
+////                                             Brand.Padding.small,
+////                                             Brand.Padding.xSmall,
+////                                             Brand.Padding.small))
+////            }
+//            
+//        }
+        
+        Garden()
+            .edgesIgnoringSafeArea(edgesToEdgesToIgnore)
+            .graniteNavigation(backgroundColor: Brand.Colors.black, disable: Device.isMacOS) {
+                GraniteButton(.imageSystem("chevron.backward"),
+                                selected: true,
+                                size: .init(14),
+                                padding: .init(0,
+                                               Brand.Padding.small,
+                                               Brand.Padding.xSmall,
+                                               Brand.Padding.small))
+            }
     }
     
     var edgesToEdgesToIgnore: Edge.Set {
         #if os(macOS)
-        return []
+        return [.top]
         #else
         if Device.isExpandedLayout {
             return [.top, .bottom]
