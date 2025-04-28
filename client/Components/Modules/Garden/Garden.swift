@@ -11,10 +11,4 @@ import SwiftUI
 
 struct Garden: GraniteComponent {
     @Command var center: Center
-    
-    @State
-    var webViewAction: WebViewAction = .idle
-    
-    @State
-    var webViewState: WebViewState = .empty
 }

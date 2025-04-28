@@ -13,7 +13,7 @@ public struct PaddingVertical: View {
     let height: CGFloat
     let color: Color
     
-    public init(_ height: CGFloat = Brand.Padding.small,
+    public init(_ height: CGFloat = .layer1,
                 _ color: Color = .black) {
         self.height = height
         self.color = color
@@ -31,7 +31,7 @@ public struct PaddingHorizontal: View {
     let width: CGFloat
     let color: Color
     
-    public init(_ width: CGFloat = Brand.Padding.small,
+    public init(_ width: CGFloat =  .layer1,
                 _ color: Color = .black) {
         self.width = width
         self.color = color
